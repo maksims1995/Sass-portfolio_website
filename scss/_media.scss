@@ -1,0 +1,158 @@
+// tablets and smaller 
+
+@media(max-width: 800px) {
+    #header-home {
+        height: 30rem;
+    }
+
+    .header-content {
+        padding-top: 5rem;
+    }
+
+    #home-a {
+
+        .specialize {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    #home-c {
+
+        .process {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    //about page
+
+    #about-logos {
+       display: none;
+    }
+
+    #testimonials {
+
+        .testimonial-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+//smart phone 
+@media(max-width: 500px) {
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+
+    #header-home {
+        height: 10rem;
+        border-bottom: 3px solid $main-color;
+
+        .header-content {
+            display: none;
+        }
+    }
+    #home-a {
+
+        .specialize {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    #home-b {
+        .stats {
+            grid-template-columns: repeat(2, 2fr);
+        }
+        .stat-box:nth-child(2) {
+            background-color: $medium-color;
+        }
+        .stat-box:nth-child(1) {
+            background-color: $light-color;
+        }
+    }
+
+    #home-c {
+        .process {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+
+    #footer {
+        padding: 1.3rem;
+
+        .footer-container {
+            display: inline;
+            text-align: center; 
+
+            p {
+                padding: 1.0rem;
+            }
+        }
+    }
+
+    //about page
+    #about-me {
+        .side-line {
+            grid-column: 1 / span 1;
+        }
+        .about-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+  
+    #about-logos {
+        grid-template-columns: repeat(1, 1fr);
+        display: none;
+    }
+
+    #testimonials {
+        text-align: center;
+
+        .testimonial-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        li {
+            padding-left: 2rem;
+        }
+    }
+
+    #my-work {
+
+        .work-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+   
+    #contact-a {
+        .text-fields {
+            grid-template-areas: 
+            'name'
+            'subject'
+            'email'
+            'phone'
+            'message';
+        }
+    }
+    #contacts {
+
+        .contact-info {
+           grid-template-columns: repeat(1 ,1fr);
+           
+           p {
+               padding-bottom: 1rem;
+           }
+        }
+    }
+    #next {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
